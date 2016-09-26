@@ -520,7 +520,6 @@ If the input is lower dimensional:\n\
 */
 void qh_user_memsizes(qhT *qh) {
 
-  QHULL_UNUSED(qh)
   /* qh_memsize(qh, size); */
 } /* user_memsizes */
 

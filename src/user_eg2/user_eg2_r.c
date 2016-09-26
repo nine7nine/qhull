@@ -489,8 +489,6 @@ Also try 'user_eg2 T1 2>&1'\n\n");
   see qh_errexit2() in libqhull.c for 2 facets
 */
 void qh_errexit(qhT *qh, int exitcode, facetT *facet, ridgeT *ridge) {
-  QHULL_UNUSED(facet);
-  QHULL_UNUSED(ridge);
 
   if (qh->ERREXITcalled) {
     fprintf(qh->ferr, "qhull error while processing previous error.  Exit program\n");
@@ -735,7 +733,6 @@ This is a Delaunay triangulation and the input is co-circular or co-spherical:\n
 */
 void qh_user_memsizes(qhT *qh) {
 
-  QHULL_UNUSED(qh);
   /* qh_memsize(qh, size); */
 } /* user_memsizes */
 

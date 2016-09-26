@@ -101,18 +101,6 @@
 
 */
 
-#if defined(__cplusplus) && defined(__INTEL_COMPILER) && !defined(QHULL_OS_WIN)
-template <typename T>
-inline void qhullUnused(T &x) { (void)x; }
-#  define QHULL_UNUSED(x) qhullUnused(x);
-#else
-#  define QHULL_UNUSED(x) (void)x;
-#endif
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /***** -libqhull_r.c prototypes (alphabetical after qhull) ********************/
 
 void    qh_qhull(qhT *qh);

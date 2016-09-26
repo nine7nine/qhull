@@ -141,7 +141,6 @@ maybeThrowQhullMessage(int exitCode)
 void QhullQh::
 maybeThrowQhullMessage(int exitCode, int noThrow)  throw()
 {
-    QHULL_UNUSED(noThrow);
 
     if(qhull_status==qh_ERRnone){
         qhull_status= exitCode;
