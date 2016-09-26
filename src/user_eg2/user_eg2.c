@@ -494,8 +494,6 @@ please remove user_eg2.c from your project.\n\n");
   see qh_errexit2() in libqhull.c for 2 facets
 */
 void qh_errexit(int exitcode, facetT *facet, ridgeT *ridge) {
-  QHULL_UNUSED(facet);
-  QHULL_UNUSED(ridge);
 
   if (qh ERREXITcalled) {
     fprintf(qh ferr, "qhull error while processing previous error.  Exit program\n");

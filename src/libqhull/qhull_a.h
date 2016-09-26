@@ -92,15 +92,6 @@
 #define trace5(args) {}
 #endif /* qh_NOtrace */
 
-/*-<a                             href="qh-qhull.htm#TOC"
-  >--------------------------------</a><a name="QHULL_UNUSED">-</a>
-
-  Define an unused variable to avoid compiler warnings
-
-  Derived from Qt's corelib/global/qglobal.h
-
-*/
-
 /***** -libqhull.c prototypes (alphabetical after qhull) ********************/
 
 void    qh_qhull(void);
